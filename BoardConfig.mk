@@ -27,18 +27,15 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_stone
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
+TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT := cortex-a55
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_2ND_CPU_VARIANT := cortex-a55
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
@@ -57,7 +54,7 @@ QCOM_BOARD_PLATFORMS += xiaomi_sm6375
 # Kernel
 VENDOR_CMDLINE := "androidboot.hardware=qcom \
                    androidboot.memcg=1 \
-		   androidboot.selinux=permissive \
+                   androidboot.selinux=permissive \
                    androidboot.usbcontroller=4e00000.dwc3 \
                    cgroup.memory=nokmem,nosocket \
                    loop.max_part=7 \
@@ -150,7 +147,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_USE_FSCRYPT_POLICY := 2
-			     
+
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
@@ -169,7 +166,7 @@ TW_HAS_EDL_MODE := false
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
-TW_FRAMERATE := 60
+TW_FRAMERATE := 120
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone28/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 5
