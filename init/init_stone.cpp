@@ -62,10 +62,10 @@ void vendor_load_properties() {
         model_property_override("sunstone", "Redmi Note 12 5G");
     }
     if (sku == "sunstone_cn")  {
-        model_property_override("sunstone", "Redmi Note 12 5G"); 
+        model_property_override("sunstone", "Redmi Note 12 5G");
     }
     if (sku == "moonstone_p_global")  {
-        model_property_override("moonstone", "POCO X5 5G");   
+        model_property_override("moonstone", "POCO X5 5G");
     }
     if (sku == "moonstone_p_in")  {
         model_property_override("moonstone", "POCO X5 5G");
