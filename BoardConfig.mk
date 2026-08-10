@@ -182,6 +182,8 @@ TW_DEVICE_VERSION := vedraj
 OF_MAINTAINER := Vedraj
 
 # Ofox flags
+TARGET_DEVICE_ALT=moonstone,sunstone,gemstone
+FOX_TARGET_DEVICES=stone,moostone,sunstone,gemstone
 FOX_VIRTUAL_AB_DEVICE := 1
 OF_FLASHLIGHT_ENABLE := 0
 OF_IGNORE_LOGICAL_MOUNT_ERRORS := 1
