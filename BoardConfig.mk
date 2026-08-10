@@ -179,7 +179,7 @@ TW_CUSTOM_BATTERY_POS := "790"
 
 # Maintainer
 TW_DEVICE_VERSION := vedraj
-OF_MAINTAINER := vedraj
+OF_MAINTAINER := Vedraj
 
 # Ofox flags
 FOX_VIRTUAL_AB_DEVICE := 1
